@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'RetGanon';
+  src: url('http://sklambert.com/responsive/RetGanon.woff') format('woff'),
+       url('http://sklambert.com/responsive/RetGanon.ttf') format('truetype'),
+       url('http://sklambert.com/responsive/RetGanon.svg#font') format('svg');
+}
+
+body {
+  font-size: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.wrapper {
+  display: table;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.canvas-container {
+  position: relative;
+  max-width: 1024px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+#terrain {
+  width: 100%;
+  height: auto;
+  background-color: pink;
+  z-index: 0;
+}
+
+#player {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#environment {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#hud {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+#resize-me span {
+  background: #000;
+  color: #fff;
+  font-family: arial, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px 40px;
+  line-height: 2rem;
+  width: 200px;
+  position: absolute;
+  top: 30px;
+  right: -80px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#resize-me {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  overflow: hidden;
+  height: 200px;
+  z-index: 5;
+}
